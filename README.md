@@ -1,4 +1,4 @@
-# N-Tier-Solution-Template
+# N-Tier Solution Template
 
 This is a template/example of a n-tier Visual Studio 2015 solution and class structure. It includes proper references and example code of how to work with various layers. This is a great jumping off point for any new n-tier C# application.
 
