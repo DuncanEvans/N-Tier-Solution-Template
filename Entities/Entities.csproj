@@ -70,7 +70,7 @@
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="README.md.txt" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DataObjects.dbml.layout">
