@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TDQDB" Class="DataObjectsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=WindowsPC;Initial Catalog=TDQDB;Integrated Security=True" SettingsObjectName="Entities.Properties.Settings" SettingsPropertyName="TDQDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.dishes" Member="dishes">
+    <Type Name="dishe">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(45)" CanBeNull="true" />
+      <Association Name="dishe_dishes_has_side" Member="dishes_has_sides" ThisKey="id" OtherKey="dishes_id" Type="dishes_has_side" />
+    </Type>
+  </Table>
+  <Table Name="dbo.sides" Member="sides">
+    <Type Name="side">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(45)" CanBeNull="true" />
+      <Association Name="side_dishes_has_side" Member="dishes_has_sides" ThisKey="id" OtherKey="sides_id" Type="dishes_has_side" />
+    </Type>
+  </Table>
+  <Table Name="dbo.dishes_has_sides" Member="dishes_has_sides">
+    <Type Name="dishes_has_side">
+      <Column Name="dishes_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="sides_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="dishe_dishes_has_side" Member="dishe" ThisKey="dishes_id" OtherKey="id" Type="dishe" IsForeignKey="true" />
+      <Association Name="side_dishes_has_side" Member="side" ThisKey="sides_id" OtherKey="id" Type="side" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.drinks" Member="drinks">
+    <Type Name="drink">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(45)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

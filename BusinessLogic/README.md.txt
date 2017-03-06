@@ -1,0 +1,2 @@
+# Bussiness Logic Layer
+The Business Logic layer contains all the core functionality of the application. The purpose is to hold all the custom logic that is applied on the methods that are exposed from the Data Access Layer before they are referenced in the Presentation Layer or the Services Layer. Operations like converting arrays to lists, mathematical calculations or variable conversions are made in this layer.

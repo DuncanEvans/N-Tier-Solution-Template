@@ -1,0 +1,2 @@
+# Common Components Layer
+The Common Components Layer contains all the common libraries or functionality that can be used in any of the above layers. For example: validation functionality, security libraries, encryption tools or exception logging classes can be added to this layer.

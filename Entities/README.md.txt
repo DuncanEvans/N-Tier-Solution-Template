@@ -1,0 +1,2 @@
+# Entities Layer
+The Entities layer contains all the entities that are used in all the other projects of the application such as tables mappings from database, DTOs (Data Transfer Objects) or ASP.NET MVC Models.

@@ -1,0 +1,2 @@
+# DataAccess Layer
+The Data Access layer contains functionality for Creating, Returning, Updating, Deleting (CRUD) items into the database. In this layer you can use technologies like ADO.NET, nHibernate or Entity Framework.
